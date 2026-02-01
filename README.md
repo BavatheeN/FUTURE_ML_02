@@ -1,89 +1,101 @@
-# FUTURE_ML_02 – Customer Churn Prediction System
+# Customer Churn Prediction System
 
 ## 📌 Project Overview
-This project is part of **Machine Learning Task 2** by **Future Interns**.  
-The goal is to build a **Customer Churn Prediction System** that identifies customers who are likely to stop using a service.  
+This project is part of **Machine Learning Task 2** assigned by **Future Interns**.  
+The objective of this task is to build a **Customer Churn Prediction System** that identifies customers who are likely to stop using a service and present actionable insights through a **Power BI dashboard**.
 
-The project uses **Logistic Regression** to predict churn probability and presents insights through an **interactive Power BI dashboard** for business decision-making.
-
----
-
-## 🧠 Problem Statement
-Customer churn is a major concern in industries such as telecom, banking, and SaaS.  
-Retaining existing customers is more cost-effective than acquiring new ones.
-
-This project helps businesses:
-- Predict customer churn probability
-- Identify key factors driving churn
-- Take proactive retention actions
+The project combines **data preprocessing, classification modeling, and business visualization** to help organizations improve customer retention strategies.
 
 ---
 
-## 🗂 Dataset
-- **Dataset Name:** Telco Customer Churn Dataset  
-- **Source:** Kaggle  
-- **Records:** 7,000+ customers  
-- **Target Variable:** `Churn`
+## 🎯 Objectives
+- Analyze customer behavior data
+- Predict customer churn probability using machine learning
+- Identify key factors driving customer churn
+- Visualize churn insights in a business-friendly dashboard
 
 ---
 
-## 🛠 Tools & Technologies
+## 🛠️ Tools & Technologies Used
 - **Python**
-- **Pandas & NumPy** – Data preprocessing
-- **Scikit-learn** – Logistic Regression model
-- **Matplotlib / Seaborn** – Feature importance & evaluation
-- **Power BI** – Dashboard visualization
-- **Jupyter Notebook**
+  - Pandas
+  - NumPy
+  - Scikit-learn
+- **Machine Learning Model**
+  - Logistic Regression
+- **Jupyter Notebook** – Data analysis & model building
+- **Power BI Desktop** – Dashboard creation
+- **GitHub** – Project hosting & version control
 
 ---
 
-## ⚙️ Project Workflow
-1. Data loading and exploration  
-2. Data cleaning and preprocessing  
-3. Encoding categorical variables  
-4. Train-test split  
-5. Model training using Logistic Regression  
-6. Model evaluation (accuracy, confusion matrix)  
-7. Churn probability prediction  
-8. Dashboard creation in Power BI  
+## 📂 Dataset
+- **Dataset Name:** Telco Customer Churn Dataset (Public)
+- **File Used:** `WA_Fn-UseC_-Telco-Customer-Churn.csv`
+- The dataset contains customer demographic details, service usage information, contract type, payment method, and churn status.
 
 ---
 
-## 📊 Key Insights
-- Customers with **month-to-month or short-term contracts** have higher churn risk
-- **Fiber optic internet users** show higher churn probability
-- **Electronic check payment method** is strongly associated with churn
-- Lack of **online security services** increases churn likelihood
+## 🔄 Project Workflow
 
----
+### 1️⃣ Data Preprocessing
+- Loaded customer churn dataset using Pandas
+- Handled missing values and data type issues
+- Encoded categorical variables using one-hot encoding
+- Removed non-informative columns
 
-## 📈 Dashboard Highlights
+### 2️⃣ Model Building
+- Split data into training and testing sets
+- Trained a **Logistic Regression** classification model
+- Applied feature scaling for better model convergence
+
+### 3️⃣ Model Evaluation
+- Evaluated model performance using:
+  - Accuracy
+  - Confusion Matrix
+  - Precision, Recall, and F1-score
+- Generated churn probability for each customer
+
+### 4️⃣ Power BI Dashboard
 The Power BI dashboard includes:
-- Overall churn rate
-- Average churn probability
-- Key churn drivers (contract type, internet service, payment method)
-- Business-friendly visual insights
+- 🔢 **Overall Churn Rate**
+- 🔢 **Average Churn Probability**
+- 📊 **Key Churn Drivers** (Contract type, Internet service, Payment method)
+- 📋 **High-Risk Customers Table**
+
+---
+
+## 📊 Dashboard Preview
+![dashboard](https://github.com/user-attachments/assets/e4a94248-6ad8-4033-9465-c53071ef094d)
+
 
 ---
 
 ## 📁 Repository Structure
 FUTURE_ML_02/
 │
-├── churn_prediction.ipynb
-├── churn_predictions.csv
-├── WA_Fn-UseC_-Telco-Customer-Churn.csv
-├── CHURN PREDICTION SYSTEM.pbix
-├── dashboard.png
-└── README.md
+├── churn_prediction.ipynb        # Jupyter Notebook (ML workflow)
+├── churn_predictions.csv         # Model prediction output
+├── WA_Fn-UseC_-Telco-Customer-Churn.csv  # Dataset
+├── CHURN PREDICTION SYSTEM.pbix  # Power BI dashboard file
+├── dashboard.png                 # Dashboard screenshot
+└── README.md                     # Project documentation
 
 ---
 
-## ✅ Conclusion
-This project successfully demonstrates how machine learning can be applied to solve real-world business problems.  
-The churn prediction model and dashboard provide actionable insights that help businesses improve customer retention strategies.
+## 📌 Key Insights
+- Customers without long-term contracts have higher churn risk
+- Fiber optic internet users show increased churn probability
+- Electronic check payment method is strongly associated with churn
+- Lack of online security services increases the likelihood of churn
 
 ---
 
-## 👩‍💻 Author
-**Bavathee N**  
-Machine Learning Intern – Future Interns
+## 🚀 Conclusion
+This project demonstrates the application of machine learning techniques to predict customer churn and uncover key factors influencing customer behavior. The combination of predictive modeling and interactive visualization provides valuable insights that support data-driven decision-making for customer retention.
+
+---
+
+## 🙌 Acknowledgement
+This project was completed as part of **Future Interns – Machine Learning Task 2**.  
+The Telco Customer Churn dataset used in this project was sourced from Kaggle.
